@@ -1,0 +1,46 @@
+/* UTILS AND RESET*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  overflow: hidden;
+}
+/*HEADER*/
+.title {
+  text-align: center;
+  margin: 20px auto;
+}
+/*MAIN*/
+.card-container {
+  padding: 30px;
+}
+.card {
+  margin: 0px auto;
+  width: 500px;
+  border-radius: 10px;
+}
+.card-img-container {
+  width: 100%;
+
+  background-color: rgba(128, 128, 128, 0.13);
+  border-radius: 10px 10px 0px 0px;
+}
+/*FOOTER*/
+footer {
+  margin-top: 30px;
+  background-color: rgb(53, 53, 53);
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer-lorem {
+  padding: 50px;
+  margin-bottom: 0px;
+}
