@@ -1,5 +1,5 @@
 import Card from "./Card.jsx";
-import Post from "../data/posts.jsx";
+import posts from "../data/posts.jsx";
 export default function Main() {
   return (
     <>
@@ -7,7 +7,18 @@ export default function Main() {
         <section className="card-main">
           <div className="container">
             <div className="row row-cols-2">
-              <Card />
+              {posts
+                .filter((post) => post.published === true)
+                .map((post) => (
+                  <Card
+                    key={post.id}
+                    id={post.id}
+                    title={post.title}
+                    img={post.image}
+                    content={post.content}
+                    tags={post.tags}
+                  />
+                ))}
             </div>
           </div>
         </section>
