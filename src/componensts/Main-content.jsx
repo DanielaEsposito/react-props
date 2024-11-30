@@ -7,7 +7,7 @@ export default function Main() {
       <main>
         <section className="card-main">
           <div className="container ">
-            <div className="row row-cols-2">
+            <div className="row row-cols-3">
               {posts
                 .filter((post) => post.published === true)
                 .map((post) => (
@@ -22,7 +22,7 @@ export default function Main() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="tags-section">
           <div className="container">
             <h2>TAGS</h2>
             <div>

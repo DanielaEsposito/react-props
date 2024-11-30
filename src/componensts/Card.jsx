@@ -19,7 +19,7 @@ export default function Card({ title, image, content, tags }) {
                     return <span className="tags red">#{tag}</span>;
                   }
                   if (tag === "css") {
-                    return <span className="tags blu">#{tag}</span>;
+                    return <span className="tags light-blu">#{tag}</span>;
                   }
                   if (tag === "js") {
                     return <span className="tags yellow">#{tag}</span>;

@@ -4,7 +4,7 @@ export default function Tags() {
   const tags = [];
   allTags.forEach((tag) => {
     if (!tags.includes(tag)) tags.push(tag);
-    console.log(tags);
+    //console.log(tags);
   });
   return (
     <div className="tag">
