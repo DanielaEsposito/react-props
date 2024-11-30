@@ -32,11 +32,15 @@ body {
   overflow: hidden;
 }
 .tags {
+  cursor: pointer;
   display: inline-block;
   padding: 0px 7px;
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.filter:hover {
+  transform: scale(1.1);
 }
 .red {
   background-color: rgb(253, 74, 74);

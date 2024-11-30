@@ -10,16 +10,16 @@ export default function Tags() {
     <div className="tag">
       {tags.map((tag) => {
         if (tag === "html") {
-          return <span className="tags red">#{tag}</span>;
+          return <span className="tags filter  red">#{tag}</span>;
         }
         if (tag === "css") {
-          return <span className="tags light-blu">#{tag}</span>;
+          return <span className="tags filter light-blu">#{tag}</span>;
         }
         if (tag === "js") {
-          return <span className="tags yellow">#{tag}</span>;
+          return <span className="tags filter yellow">#{tag}</span>;
         }
         if (tag === "php") {
-          return <span className="tags blu">#{tag}</span>;
+          return <span className="tags filter blu">#{tag}</span>;
         }
       })}
     </div>
