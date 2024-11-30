@@ -5,21 +5,18 @@ export default function Main() {
     <>
       <main>
         <section className="card-main">
-          <div className="container">
-            <div className="row row-cols-2">
-              {posts
-                .filter((post) => post.published === true)
-                .map((post) => (
-                  <Card
-                    key={post.id}
-                    id={post.id}
-                    title={post.title}
-                    img={post.image}
-                    content={post.content}
-                    tags={post.tags}
-                  />
-                ))}
-            </div>
+          <div className="container d-flex flex-wrap">
+            {posts
+              .filter((post) => post.published === true)
+              .map((post) => (
+                <Card
+                  key={post.id}
+                  title={post.title}
+                  img={post.image}
+                  content={post.content}
+                  tags={post.tags}
+                />
+              ))}
           </div>
         </section>
       </main>

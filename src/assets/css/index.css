@@ -17,19 +17,36 @@ img {
   margin: 20px auto;
 }
 /*MAIN*/
+
 .card-container {
   padding: 30px;
 }
 .card {
   margin: 0px auto;
-  width: 500px;
+  width: 400px;
   border-radius: 10px;
 }
 .card-img-container {
   width: 100%;
-
   background-color: rgba(128, 128, 128, 0.13);
   border-radius: 10px 10px 0px 0px;
+}
+.tags {
+  display: inline-block;
+  padding: 0px 7px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.red {
+  background-color: rgb(253, 74, 74);
+}
+.blu {
+  background-color: rgb(82, 82, 255);
+  color: white;
+}
+.yellow {
+  background-color: rgb(255, 208, 0);
 }
 /*FOOTER*/
 footer {
