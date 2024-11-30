@@ -8,18 +8,34 @@ export default function Tags() {
   });
   return (
     <div className="tag">
-      {tags.map((tag) => {
+      {tags.map((tag, index) => {
         if (tag === "html") {
-          return <span className="tags filter  red">#{tag}</span>;
+          return (
+            <span key={index} className="tags filter  red">
+              #{tag}
+            </span>
+          );
         }
         if (tag === "css") {
-          return <span className="tags filter light-blu">#{tag}</span>;
+          return (
+            <span key={index} className="tags filter light-blu">
+              #{tag}
+            </span>
+          );
         }
         if (tag === "js") {
-          return <span className="tags filter yellow">#{tag}</span>;
+          return (
+            <span key={index} className="tags filter yellow">
+              #{tag}
+            </span>
+          );
         }
         if (tag === "php") {
-          return <span className="tags filter blu">#{tag}</span>;
+          return (
+            <span key={index} className="tags filter blu">
+              #{tag}
+            </span>
+          );
         }
       })}
     </div>
