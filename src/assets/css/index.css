@@ -40,6 +40,9 @@ body {
 .red {
   background-color: rgb(253, 74, 74);
 }
+.light-blu {
+  background-color: rgb(82, 215, 255);
+}
 .blu {
   background-color: rgb(82, 82, 255);
   color: white;
