@@ -1,12 +1,13 @@
 import Button from "./Button/Button.jsx";
-
+import defaultImage from "../assets/img/defaultImg.svg";
 export default function Card({ title, image, content, tags }) {
+  const imgPath = image ?? defaultImage;
   return (
     <>
       <div className="card-container col">
         <div className="card">
           <div className="card-img-container">
-            <img src={image} className="card-img-top img-fluid" alt="" />
+            <img src={imgPath} className="card-img-top img-fluid" alt="" />
           </div>
           <div className="card-body">
             <h5 className="card-title fw-semibold">{title}</h5>
@@ -28,11 +29,11 @@ export default function Card({ title, image, content, tags }) {
             ) : (
               ""
             )}
+
             <Button />
           </div>
         </div>
       </div>
-      ;
     </>
   );
 }

@@ -8,9 +8,7 @@ body {
   background-color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
 }
-img {
-  overflow: hidden;
-}
+
 /*HEADER*/
 .title {
   text-align: center;
@@ -30,6 +28,7 @@ img {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.13);
   border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
 }
 .tags {
   display: inline-block;

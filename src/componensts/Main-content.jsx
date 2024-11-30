@@ -12,7 +12,7 @@ export default function Main() {
                 <Card
                   key={post.id}
                   title={post.title}
-                  img={post.image}
+                  image={post.image}
                   content={post.content}
                   tags={post.tags}
                 />
